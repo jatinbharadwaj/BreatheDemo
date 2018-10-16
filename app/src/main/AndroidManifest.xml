@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AccDetails"/>
+        <activity android:name=".ActualInterface"/>
+        <activity android:name=".forecast"/>
+        <activity android:name=".IDactivity"/>
+        <activity android:name=".ShopNow"/>
+        <activity android:name=".SignUp"/>
     </application>
 
 </manifest>
