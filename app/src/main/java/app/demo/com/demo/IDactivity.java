@@ -37,10 +37,14 @@ public class IDactivity extends AppCompatActivity {
         //change the rules for writing into database
         //also check if could database should be used
 
-        Intent askInternet=new Intent(Settings.ACTION_NETWORK_OPERATOR_SETTINGS);
-        startActivity(askInternet);
 
-
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toActualInterface=new Intent(IDactivity.this,ActualInterface.class);
+                startActivity(toActualInterface);
+            }
+        });
 
         btnHeatmap.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,8 +58,8 @@ public class IDactivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //go to activity for shop now
-               // Intent toShopNow=new Intent(IDactivity.this,ShopNow.class);
-               // startActivity(toShopNow);
+                Intent toShopNow=new Intent(IDactivity.this,ShopNow.class);
+                startActivity(toShopNow);
             }
         });
     }

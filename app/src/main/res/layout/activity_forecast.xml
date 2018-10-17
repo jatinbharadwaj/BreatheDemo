@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".forecast"
     android:orientation="vertical"
-    android:background="@drawable/bgg">
+    android:background="@drawable/bac">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
