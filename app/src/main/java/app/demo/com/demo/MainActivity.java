@@ -144,11 +144,20 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+       // if (id == R.id.profile_settings) {
+         //   return true;
+        //}
+        super.onOptionsItemSelected(item);
+        switch(item.getItemId()){
 
-        return super.onOptionsItemSelected(item);
+            case R.id.profile_settings:
+                Intent intent = new Intent(MainActivity.this, app.demo.com.demo.AccDetails.class);
+                startActivity(intent);
+                return true;
+
+                default: return false;
+        }
+       // return super.onOptionsItemSelected(item);
     } //main_activity.java
 
 }
