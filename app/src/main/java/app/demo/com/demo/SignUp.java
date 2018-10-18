@@ -72,6 +72,11 @@ public class SignUp extends AppCompatActivity {
                 startActivity(intent);
                 return true;
 
+            case R.id.information_settings:
+                Intent ntent = new Intent(SignUp.this, app.demo.com.demo.Information.class);
+                startActivity(ntent);
+                return true;
+
             default:
                 return false;
         }
