@@ -6,13 +6,35 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class Information extends AppCompatActivity {
 
+    TextView textView3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
+        textView3 = (TextView) findViewById(R.id.textView3);
+
+        // To read text file stored in asset
+
+        String text = " ";
+        try {
+            InputStream is = getAssets().open("About.txt");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            text = new String(buffer);
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        textView3.setText(text);
     }
 
     @Override
