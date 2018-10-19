@@ -1,0 +1,13 @@
+﻿ABOUT BREATHE
+We intend to develop a device with the thought in mind that
+
+“Prevention is better than Cure”.
+
+?Our target audience is ENTIRE humanity.
+?Our application provides specific and very accurate real time data about pollution around us.
+?It maintains a database of the pollutant specific readings of the air around us and using machine learning algorithm predicts at which point of year the pollution will start to rise so that preventive measures can be taken beforehand.
+?Along with the predictions, the app tells the pollution specific preventive measures that can be practiced by individuals at home and industry level.
+?The average range that the government now offers (55 sq. Km approx in Delhi) will be reduced to 50 m using our device.
+?The data acquired will be very specific and accurate.
+?Users will get a platform on which they will be able to see for themselves the level of pollution in their homes and areas around them which is not present at the moment.
+
