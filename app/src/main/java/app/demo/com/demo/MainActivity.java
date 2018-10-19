@@ -14,23 +14,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.facebook.AccessToken;
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.login.LoginManager;
-import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.SignInButton;
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-
 import java.util.Arrays;
 
 ////////TASKS IN THIS ACTIVITY
@@ -78,17 +61,18 @@ public class MainActivity extends AppCompatActivity {
 
         //signing in with Email and password
         btnSignIn.setOnClickListener(new View.OnClickListener() {
-                                         @Override
-                                         public void onClick(View view) {
+            @Override
+            public void onClick(View view) {
 
-                                           //  Toast.makeText(MainActivity.this, "Password matches", Toast.LENGTH_SHORT).show();
-                                             Intent toLocation = new Intent(MainActivity.this, ActualInterface.class);
-                                             startActivity(toLocation);
-                                             finish();
+                //  Toast.makeText(MainActivity.this, "Password matches", Toast.LENGTH_SHORT).show();
+                Intent toLocation = new Intent(MainActivity.this, ActualInterface.class);
+                Toast.makeText(MainActivity.this, "Please wait!", Toast.LENGTH_SHORT).show();
+                startActivity(toLocation);
+                finish();
 
-                                         }
+            }
 
-                                     });
+        });
 
                 btnGoogle.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -144,9 +128,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     } //main_activity.java
