@@ -48,7 +48,7 @@
         android:layout_marginRight="2dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="50"
-        android:background="@drawable/btn_second"
+        android:background="@drawable/btn_sign_up_sign_in"
         android:text="Submit"
         android:textColor="#fff"
         android:theme="?attr/imageButtonStyle" />
@@ -63,7 +63,7 @@
         android:layout_marginRight="2dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="50"
-        android:background="@drawable/btn_second"
+        android:background="@drawable/btn_sign_up_sign_in"
         android:text="View heat map"
         android:textColor="#fff" />
 
@@ -77,5 +77,5 @@
         android:layout_marginBottom="10dp"
         android:layout_weight="50"
         android:textColor="#fff"
-        android:background="@drawable/btn_second"/>
+        android:background="@drawable/btn_sign_up_sign_in"/>
 </LinearLayout>

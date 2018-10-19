@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="443dp"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -34,6 +34,25 @@
 
             />
 
+
     </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnShopNow"
+        android:layout_width="156dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="50"
+        android:background="@drawable/btn_sign_up_sign_in"
+
+        android:text="Shop Now"
+        android:textColor="#fff" />
+
 
 </LinearLayout>
