@@ -18,26 +18,46 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="FORECAST"
+                android:textSize="50sp"
+                android:textColor="#000"
                 android:gravity="center"
-                android:layout_marginBottom="50dp"/>
+                android:layout_marginBottom="20dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Past Week"/>
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:text="TODAY"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp">
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChart1f"
+                        android:layout_width="358dp"
+                        android:layout_height="match_parent"></com.github.mikephil.charting.charts.BarChart>
 
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Next Seven Days"/>
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:text="NEXT THREE DAYS"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"></LinearLayout>
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart2f"
+                    android:layout_width="358dp"
+                    android:layout_height="match_parent"></com.github.mikephil.charting.charts.BarChart>
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

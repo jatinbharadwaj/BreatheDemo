@@ -38,7 +38,7 @@ public class SignUp extends AppCompatActivity {
         btnsignup2 = (Button) findViewById(R.id.btnsignup2);
 
 
-        //BtnSignup Ka kya krna hai
+
 
 
 
