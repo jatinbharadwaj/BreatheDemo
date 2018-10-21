@@ -24,7 +24,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/breathe_logo_trans" />
+        android:src="@drawable/breathe_logo_trans"/>
 
 
     <LinearLayout

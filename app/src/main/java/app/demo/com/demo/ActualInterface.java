@@ -36,7 +36,10 @@ public class ActualInterface extends AppCompatActivity {
         btnShopNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 //go to ShopNow activity
+                Intent intentToShopNow=new Intent(ActualInterface.this,ShopNow.class);
+                startActivity(intentToShopNow);
             }
         });
     }
